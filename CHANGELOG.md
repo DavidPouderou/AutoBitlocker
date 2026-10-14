@@ -1,5 +1,15 @@
 # Journal des versions — AutoBitlocker
 
+## 1.1.4 — 2026-10-14 — Correctif : mise à jour en attente appliquée au lancement
+
+- Une mise à jour téléchargée lors d'une session précédente (`.new`) pouvait être refusée à tort
+  au lancement suivant (« fichier non signé ») puis supprimée — elle était alors retéléchargée et
+  installée à la fermeture : jamais de version non vérifiée, mais un lancement de retard. Cause :
+  dans la session principale de l'application, le module Security de PowerShell peut refuser de se
+  charger (conflits TypeData, travers connu de PowerShell 5.1) et le contrôle de signature devient
+  indisponible. La lecture de signature se replie désormais sur un runspace neuf du même processus,
+  où elle fonctionne toujours. Découvert lors du test réel du chemin « mise en place au lancement ».
+
 ## 1.1.3 — 2026-10-14 — Journal des mises à jour : « déjà à jour » tracé
 
 - `AutoBitlocker\logs\mises-a-jour.log` note désormais aussi les vérifications qui concluent
