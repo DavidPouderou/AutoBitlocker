@@ -1,5 +1,16 @@
 # Journal des versions — AutoBitlocker
 
+## 1.1.2 — 2026-10-14 — Correctif : la mise à jour automatique aboutit
+
+- Le calcul de l'empreinte SHA-256 du fichier téléchargé échouait dans le runspace d'arrière-plan
+  (`Get-FileHash` est une fonction du module Utility, absente des runspaces nus — seules les
+  cmdlets compilées y sont garanties) : la mise à jour était refusée à tort. Empreinte désormais
+  calculée en .NET pur ; un test interdit la réapparition de ces fonctions dans le module.
+  Découvert lors du premier test réel 1.1.0 → 1.1.1.
+- À la fermeture, une vérification de mise à jour déjà engagée dispose de quelques secondes pour
+  se terminer avant la mise en place : le technicien qui ferme juste après la fiche n'a plus à
+  attendre le lancement suivant.
+
 ## 1.1.1 — 2026-10-14 — Version et auteur affichés dans l'en-tête
 
 - L'en-tête de la fenêtre principale affiche la version et le copyright
