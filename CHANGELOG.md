@@ -1,5 +1,10 @@
 # Journal des versions — AutoBitlocker
 
+## 1.1.3 — 2026-10-14 — Journal des mises à jour : « déjà à jour » tracé
+
+- `AutoBitlocker\logs\mises-a-jour.log` note désormais aussi les vérifications qui concluent
+  « déjà à jour » : on voit que le mécanisme a bien tourné, même quand il n'a rien à faire.
+
 ## 1.1.2 — 2026-10-14 — Correctif : la mise à jour automatique aboutit
 
 - Le calcul de l'empreinte SHA-256 du fichier téléchargé échouait dans le runspace d'arrière-plan
