@@ -1,5 +1,11 @@
 # Journal des versions — AutoBitlocker
 
+## 1.1.1 — 2026-10-14 — Version et auteur affichés dans l'en-tête
+
+- L'en-tête de la fenêtre principale affiche la version et le copyright
+  (« v1.1.1 · © 2026 David Pouderou »), comme PrintRescue : le technicien voit d'un coup d'œil
+  quelle version tourne, notamment après une mise à jour automatique.
+
 ## 1.1.0 — 2026-10-14 — Distribution GitHub, signature et mise à jour automatique
 
 - **Deux dépôts GitHub**, sur le modèle d'Optimus Cleaner et de PrintRescue : le code source vit
