@@ -1,5 +1,14 @@
 # Journal des versions — AutoBitlocker
 
+## 1.1.5 — 2026-10-15 — Libellé Société
+
+- L'interface parle désormais de « Société », comme la documentation : le libellé « Société / client »
+  disparaît de la fenêtre principale, de la fiche de récupération, de la fiche PDF, du texte copié
+  (« Copier la fiche ») et des messages de saisie manquante. Aucun changement de fonctionnement :
+  réglages et historique des sociétés inchangés.
+- Scripts annexes (`publish.ps1`, `reserve-securite\Prepare-UsbKey.ps1`) et commentaires des tests en
+  vocabulaire neutre (« le poste », « un parc »).
+
 ## 1.1.4 — 2026-10-14 — Correctif : mise à jour en attente appliquée au lancement
 
 - Une mise à jour téléchargée lors d'une session précédente (`.new`) pouvait être refusée à tort
