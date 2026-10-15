@@ -1,13 +1,14 @@
 # AutoBitlocker
 
-Outil portable (clé USB) pour **déployer BitLocker en série** sur des postes Windows 10 / 11
-Professionnel et Entreprise en groupe de travail : activation du chiffrement, point de
-restauration préalable, enregistrement de la clé de récupération (fiche PDF photographiable,
-journal CSV pour import), le tout en trois saisies. Un seul fichier `.exe`, sans installation.
+Une clé USB, trois saisies, et BitLocker est en route sur le poste. AutoBitlocker enchaîne le
+**déploiement de BitLocker en série** sur des postes Windows 10 / 11 Professionnel et Entreprise
+en groupe de travail : point de restauration préalable, activation du chiffrement, puis
+enregistrement de la clé de récupération sous deux formes, une fiche PDF photographiable et un
+journal CSV prêt à importer. Un seul fichier `.exe`, sans installation.
 
-Outil interne de technicien : il n'est pas destiné au grand public. Le dépôt ne contient pas le
-code source (voir la licence), seulement la documentation, le certificat public et les versions
-publiées.
+C'est un outil de technicien, fait pour traiter plusieurs postes à la suite ; il ne s'adresse pas
+au grand public. Ce dépôt ne contient pas le code source (voir la licence) : on y trouve la
+documentation, le certificat public et les versions publiées.
 
 ## Téléchargement
 
@@ -17,7 +18,7 @@ Dernière version : [page Releases](https://github.com/DavidPouderou/AutoBitlock
 |---|---|
 | `AutoBitlocker.exe` | Windows 10 et Windows 11 Professionnel / Entreprise (un seul fichier, ~400 Ko) |
 
-Aucune installation : copier le fichier à la racine de la clé USB du technicien et le lancer.
+Aucune installation : copier le fichier à la racine de votre clé USB et le lancer.
 L'outil demande les droits administrateur au lancement ; sans eux, il ne démarre pas. Windows
 PowerShell 5.1 et WPF, déjà présents sur tout Windows 10 / 11, suffisent.
 
